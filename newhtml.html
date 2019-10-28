@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript">
+			 var arreglo =  [
+                             // x
+			 	[2,	44,	65,	56],
+			 	[11,    24,	65,	1],
+			 	[81,    94,	50,	0],
+			 	[1,	4,	0,	10]] ;
+
+			 // De izquierda a derecha Diagonal 
+
+			 var a = -1 ; // variables que se utilizan
+			 var b = -1 ; // variables que se utilizan
+			 var Suma = 0; // Acumulador
+			 
+			 // De derecha a izquierda Diagonal 
+			 var d = 4 ;// variables que se utilizan
+            			 var c = -1 ; // variables que se utilizan
+			 var Suma2 = 0; // Acumulador
+
+			 for (var i = 0; i < arreglo[0].length; i++) {
+			 	
+			 	console.log("De izquierda a derecha Diagonal "); 		// imprime en la consola
+			 	a ++; // eje x +1+1+1+1+1 // se suma en 1
+			 	b ++; // eje Y +1+1+1+1+1
+			 	console.log("Arreglo x "+ a + " y "+  b ); // imprime en la consola coordendas
+			 	console.log(arreglo[a][b]); // Muestra el valor de la coordenada
+			 	var Valor1 = arreglo[a][b]; // Captura el valor de la coordenada
+			 	Suma = Suma + Valor1; // Acumulador
+
+			 	console.log("Suma = "+Suma);// Muestra Acucmulaor
+
+			 }
+			 	
+			 	console.log("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ");
+
+			 for (var i = 0; i < arreglo[0].length; i++) {
+
+			 	console.log("De derecha a izquierda Diagonal "); // imprime en la consola
+			 	c ++; 		// eje y
+			 	d = d - 1; // eje x
+			 	console.log("Arreglo x "+ d + " y "+  c );  // imprime en la consola coordendas
+			 	console.log(arreglo[c][d]); // Muestra el valor de la coordenada
+			 	var Valor1 = arreglo[c][d]; // Captura el valor de la coordenada
+			 	Suma2 = Suma2 + Valor1; // Acumulador
+
+			 	console.log("Suma2 = "+Suma2); // Muestra Acucmulaor
+
+			 }
+			 	console.log("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ");
+
+// De Derecha Vertical 
+			 var f =0 ; // variables que se utilizan
+                         var e = -1 ;// variables que se utilizan
+
+			 var Suma3 = 0; // Acumulador
+                         
+                                //  [2,	44,	65,	56],
+			 	//[11,    24,	65,	1],
+			 	//[81,    94,	50,	0],
+			 	//[1,	4,	0,	10]] ;
+			 for (var i = 0; i < arreglo[0].length; i++) {
+
+			 	console.log("De derecha vertical"); // imprime en la consola
+                                e ++; 		// eje y
+			 	console.log("Arreglo x "+ f + " y "+  e );  // imprime en la consola coordendas
+			 	console.log(arreglo[e][f]); // Muestra el valor de la coordenada
+			 	var Valor1 = arreglo[e][f]; // Captura el valor de la coordenada
+			 	Suma3 = Suma3 + Valor1; // Acumulador
+
+			 	console.log("Suma3 = "+Suma3); // Muestra Acucmulaor
+
+			 }
+			 	console.log("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ");
+                        // De izquierda Vertical 
+                        			 var g = -1 ; // variables que se utilizan
+			 var h = 3 ;// variables que se utilizan
+
+			 var Suma4 = 0; // Acumulador
+                                //[*|2,	44,	65,	-/56],
+			 	//[*11,  |24,	/65,	-1],
+			 	//[*81,  /94,	|50,	-0],
+			 	//[*/1,	4,	0,	-|10]] ;
+			 for (var i = 0; i < arreglo[0].length; i++) {
+
+			 	console.log("De izquierda vertical"); // imprime en la consola
+			 	g ++; 		// eje y
+			 	console.log("Arreglo x "+ h + " y "+ g  );  // imprime en la consola coordendas
+			 	console.log(arreglo[g][h]); // Muestra el valor de la coordenada
+			 	var Valor1 = arreglo[g][h]; // Captura el valor de la coordenada
+			 	Suma4 = Suma4 + Valor1; // Acumulador
+
+			 	console.log("Suma4 = "+Suma4); // Muestra Acucmulaor
+
+			 }
+			 	console.log("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ");
+
+			 	console.log("Suma Total De izquierda a derecha Diagonal "+ Suma);
+			 	console.log("Suma Total De derecha a izquierda Diagonal"+ Suma2);
+			 	console.log("Suma Total De derecha Vertical "+ Suma3);
+			 	console.log("Suma Total De izquierda Vertical "+ Suma4);
+
+		</script>
+        
+        
+        
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>
